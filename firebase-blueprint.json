@@ -1,0 +1,74 @@
+{
+  "entities": {
+    "CandidateUser": {
+      "title": "CandidateUser",
+      "description": "Perfil e progresso acadêmico do candidato ao concurso público do MININT",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "description": "UID do candidato ou identificador único" },
+        "name": { "type": "string", "description": "Nome completo do candidato", "maxLength": 100 },
+        "email": { "type": "string", "description": "E-mail oficial do candidato", "maxLength": 120 },
+        "emailVerified": { "type": "boolean", "description": "Indica se o e-mail foi validado via código OTP" },
+        "whatsapp": { "type": "string", "description": "Contacto telefónico de Angola (+244)", "maxLength": 20 },
+        "province": { "type": "string", "description": "Província de residência em Angola", "maxLength": 50 },
+        "careerTrack": { "type": "string", "description": "Carreira do MININT (ex: Polícia Nacional, SIC, SME, Bombeiros, Penitenciário)", "maxLength": 60 },
+        "isSubscribed": { "type": "boolean", "description": "Acesso premium activo" },
+        "subscriptionPlan": { "type": "string", "description": "Plano (mensal_30d, vitalicio ou free)", "maxLength": 30 },
+        "studyHoursGoal": { "type": "number", "description": "Meta diária de estudo em horas" },
+        "streakDays": { "type": "number", "description": "Sequência de dias consecutivos estudados" },
+        "affiliateCode": { "type": "string", "description": "Código de indicação de afiliados", "maxLength": 20 },
+        "balanceKz": { "type": "number", "description": "Saldo acumulado de comissões em Kwanzas" },
+        "createdAt": { "type": "string", "description": "Data ISO de registo", "maxLength": 40 },
+        "updatedAt": { "type": "string", "description": "Data ISO de actualização", "maxLength": 40 }
+      },
+      "required": ["id", "name", "email", "province", "careerTrack"]
+    },
+    "ExamAttempt": {
+      "title": "ExamAttempt",
+      "description": "Histórico de realização de simulados e exames cronometrados de 45 minutos",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "description": "ID único da tentativa de exame" },
+        "userId": { "type": "string", "description": "UID do candidato proprietário do exame" },
+        "candidateName": { "type": "string", "description": "Nome do candidato para ranking", "maxLength": 100 },
+        "date": { "type": "string", "description": "Data e hora do exame", "maxLength": 40 },
+        "score": { "type": "number", "description": "Nota obtida de 0 a 20 valores" },
+        "totalQuestions": { "type": "number", "description": "Total de questões respondidas" },
+        "correctCount": { "type": "number", "description": "Questões certas" },
+        "durationMinutes": { "type": "number", "description": "Duração em minutos" },
+        "passed": { "type": "boolean", "description": "Aprovado (nota >= 10/20)" }
+      },
+      "required": ["id", "userId", "score", "totalQuestions", "passed"]
+    },
+    "Subscription": {
+      "title": "Subscription",
+      "description": "Registo de pagamento e subscrição premium via Stripe ou Multicaixa",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "description": "ID da subscrição ou transacção Stripe" },
+        "userId": { "type": "string", "description": "ID do candidato assinante" },
+        "plan": { "type": "string", "description": "30_days ou lifetime", "maxLength": 30 },
+        "amountKz": { "type": "number", "description": "Valor em Kwanzas (5000 ou 12000)" },
+        "status": { "type": "string", "description": "active, pending ou cancelled", "maxLength": 20 },
+        "paymentMethod": { "type": "string", "description": "stripe ou multicaixa_express", "maxLength": 30 },
+        "stripeSessionId": { "type": "string", "description": "Stripe Checkout Session ID", "maxLength": 100 },
+        "createdAt": { "type": "string", "description": "Timestamp de subscrição", "maxLength": 40 }
+      },
+      "required": ["id", "userId", "plan", "status", "paymentMethod"]
+    }
+  },
+  "firestore": {
+    "/candidates/{candidateId}": {
+      "schema": { "$ref": "#/entities/CandidateUser" },
+      "description": "Colecção de candidatos com dados de perfil, metas e progresso individual"
+    },
+    "/exam_attempts/{attemptId}": {
+      "schema": { "$ref": "#/entities/ExamAttempt" },
+      "description": "Histórico e relatórios de simulados realizados por candidato"
+    },
+    "/subscriptions/{subId}": {
+      "schema": { "$ref": "#/entities/Subscription" },
+      "description": "Transacções e assinaturas processadas pelo Stripe e Multicaixa"
+    }
+  }
+}

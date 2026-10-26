@@ -1,0 +1,2313 @@
+ASSUME O PAPEL DE UMA EQUIPA TECNOLÓGICA DE ELITE, COMPOSTA POR:
+
+- Um arquitecto de software sénior.
+- Um programador full-stack especialista em React e TypeScript.
+- Um engenheiro de bases de dados PostgreSQL e Supabase.
+- Um especialista em cibersegurança e protecção de dados.
+- Um especialista em inteligência artificial aplicada à educação.
+- Um especialista em UX/UI e design de produtos digitais.
+- Um especialista em aplicações PWA e experiência mobile-first.
+- Um especialista em sistemas de pagamentos, assinaturas e controlo de acessos.
+- Um especialista em plataformas de aprendizagem e simulados.
+- Um especialista em marketing digital, conversão e crescimento de produtos SaaS.
+- Um engenheiro de qualidade especializado em testes, depuração e prevenção de falhas.
+
+A tua missão é PLANEAR, DESENVOLVER, TESTAR E PREPARAR PARA PRODUÇÃO uma plataforma digital profissional chamada AproVE.
+
+Não quero apenas uma landing page, um protótipo, um conjunto de imagens, um dashboard fictício ou uma demonstração sem funcionalidades reais.
+
+Quero construir uma aplicação web funcional, integrada, segura, moderna, interactiva, escalável e comercialmente viável.
+
+A aplicação deverá combinar um website público, uma plataforma privada de preparação para concursos públicos, uma área administrativa completa, um sistema de assinaturas, um programa de afiliados e um assistente de inteligência artificial.
+
+Todas estas componentes devem fazer parte do mesmo projecto, partilhar a mesma identidade visual e funcionar de forma integrada.
+
+Não construas um website independente que tenha de ser refeito posteriormente para se transformar numa aplicação.
+
+Constrói uma única aplicação web responsiva, preparada para funcionar como PWA, permitindo que os utilizadores possam aceder através do navegador e, nos dispositivos compatíveis, adicioná-la ao ecrã inicial.
+
+==================================================
+1. IDENTIDADE DO PROJECTO
+==================================================
+
+NOME DA MARCA:
+AproVE
+
+SLOGAN:
+Mais preparação. Mais confiança.
+
+MERCADO INICIAL:
+Angola.
+
+IDIOMA PRINCIPAL:
+Português utilizado em Angola, com linguagem natural, clara, profissional e acessível.
+
+PÚBLICO INICIAL:
+Pessoas que pretendem preparar-se para concursos públicos em Angola, começando pelos candidatos ao concurso do Ministério do Interior (MININT).
+
+VISÃO DE LONGO PRAZO:
+Transformar a AproVE numa plataforma de referência em Angola para preparação de concursos públicos, com possibilidade de expansão para diferentes instituições, concursos, provas de admissão e outras oportunidades de avaliação.
+
+MISSÃO:
+Ajudar os candidatos a estudar com mais organização, praticar através de simulados, identificar as suas dificuldades, acompanhar a evolução e preparar-se melhor para as avaliações.
+
+POSICIONAMENTO:
+A AproVE é uma plataforma independente de preparação, aprendizagem e treino para concursos.
+
+IMPORTANTE:
+A AproVE não deve ser apresentada como uma plataforma oficial do MININT, do Governo de Angola ou de qualquer outra instituição pública.
+
+Não utilizar brasões oficiais, símbolos policiais, insígnias institucionais ou elementos visuais que possam sugerir uma parceria oficial inexistente.
+
+Sempre que o MININT for mencionado, deve ficar claro que a plataforma é independente e que as informações institucionais dependem das respectivas fontes oficiais.
+
+A marca deve transmitir:
+- Confiança.
+- Preparação.
+- Disciplina.
+- Evolução.
+- Tecnologia.
+- Credibilidade.
+- Oportunidade.
+- Organização.
+- Profissionalismo.
+- Proximidade com os candidatos angolanos.
+
+A experiência deve ser acessível tanto a pessoas com elevada literacia digital como a utilizadores que estejam a utilizar uma plataforma deste género pela primeira vez.
+
+==================================================
+2. OBJECTIVOS PRINCIPAIS
+==================================================
+
+A aplicação deverá cumprir sete grandes objectivos.
+
+OBJECTIVO 1 — ATRACÇÃO:
+Apresentar uma página pública profissional que explique o valor da AproVE e incentive os visitantes a criarem uma conta.
+
+OBJECTIVO 2 — PREPARAÇÃO:
+Disponibilizar matérias de estudo, exercícios, simulados, testes psicotécnicos, explicações e ferramentas de revisão.
+
+OBJECTIVO 3 — RETENÇÃO:
+Criar uma experiência que incentive o candidato a regressar, estudar regularmente, acompanhar o progresso e corrigir os erros.
+
+OBJECTIVO 4 — MONETIZAÇÃO:
+Converter parte dos utilizadores gratuitos em clientes Premium, através de benefícios claros e de uma experiência de valor.
+
+OBJECTIVO 5 — AUTOMAÇÃO:
+Utilizar inteligência artificial para apoiar a criação de conteúdos, a aprendizagem, a geração de exercícios e a assistência aos candidatos, com mecanismos de controlo de qualidade.
+
+OBJECTIVO 6 — CRESCIMENTO:
+Implementar um programa de afiliados com níveis, links de referência, atribuição de vendas e gestão de comissões.
+
+OBJECTIVO 7 — ADMINISTRAÇÃO:
+Permitir que o proprietário controle a plataforma, os utilizadores, os conteúdos, os pagamentos, as assinaturas, os afiliados, as comissões e as configurações através de um painel administrativo.
+
+A aplicação deve ser concebida para começar com um concurso principal, mas a arquitectura deve permitir acrescentar outros concursos sem reconstruir o sistema.
+
+==================================================
+3. ARQUITECTURA E TECNOLOGIAS
+==================================================
+
+Utiliza preferencialmente a seguinte arquitectura:
+
+FRONTEND:
+- React.
+- TypeScript.
+- Vite, se adequado ao ambiente de desenvolvimento.
+- Componentes reutilizáveis.
+- Organização modular.
+- CSS moderno, Tailwind CSS ou outra solução consistente.
+- React Router ou solução equivalente para navegação.
+- Validação de formulários.
+- Gestão adequada dos estados de carregamento, erro, sucesso e ausência de dados.
+
+BACKEND E BASE DE DADOS:
+- Supabase.
+- PostgreSQL.
+- Supabase Auth.
+- Row Level Security (RLS).
+- Supabase Storage, se necessário.
+- Funções de backend ou Edge Functions para operações sensíveis.
+- Migrations versionadas para alterações ao esquema da base de dados.
+
+INTELIGÊNCIA ARTIFICIAL:
+- Integração com um modelo de IA através de um backend seguro.
+- Utilização de API quando necessária.
+- Separação entre a lógica da aplicação e o fornecedor de IA, para permitir alterações futuras.
+
+CONTROLO DE VERSÃO:
+- Git.
+- GitHub.
+- Estrutura de código organizada.
+- Ficheiro README com instruções de instalação, configuração, desenvolvimento e publicação.
+
+ALOJAMENTO:
+- Preparação para deployment através de uma plataforma compatível, como Vercel.
+- Verificação das configurações necessárias para aplicações React e rotas internas.
+- Utilização de HTTPS em produção.
+
+APLICAÇÃO:
+- Web responsiva.
+- Mobile-first.
+- PWA, quando suportada.
+- Preparada para instalação no ecrã inicial.
+- Interface utilizável em Android, iPhone, tablet e computador.
+
+Não pressuponhas que as ferramentas, quotas ou funcionalidades dos planos gratuitos são ilimitadas.
+
+Identifica dependências externas, custos potenciais, limitações dos planos e serviços que exigem configuração adicional.
+
+Não coloques segredos, chaves privadas ou credenciais administrativas no frontend.
+
+Se o ambiente não disponibilizar acesso a alguma ferramenta, não simules uma integração funcional. Cria uma interface de integração bem definida, documenta o que falta e mantém o resto da aplicação operacional.
+
+==================================================
+4. IDENTIDADE VISUAL E DESIGN SYSTEM
+==================================================
+
+Cria uma identidade visual própria para a AproVE.
+
+ESTILO:
+- Moderno.
+- Tecnológico.
+- Minimalista.
+- Elegante.
+- Profissional.
+- Intuitivo.
+- Humano.
+- Organizado.
+- Persuasivo sem ser agressivo.
+- Visualmente atractivo sem excesso de elementos.
+
+PALETA DE CORES:
+
+Azul profundo:
+#10233F
+
+Verde principal:
+#16A673
+
+Branco:
+#FFFFFF
+
+Cinza claro:
+#F3F5F8
+
+Cinza escuro:
+#344054
+
+Dourado discreto:
+#E6B75A
+
+UTILIZAÇÃO DAS CORES:
+
+O azul profundo deve transmitir confiança e profissionalismo.
+
+O verde deve representar evolução, progresso, sucesso e acção.
+
+O branco deve proporcionar clareza e espaço visual.
+
+Os cinzentos devem organizar a informação sem criar ruído.
+
+O dourado deve ser utilizado de forma discreta, especialmente em elementos relacionados com o nível Ouro, destaques e detalhes premium.
+
+TIPOGRAFIA:
+
+Utiliza Inter para a interface e Manrope para títulos, ou alternativas equivalentes que mantenham a identidade visual.
+
+LOGÓTIPO:
+
+Cria uma identidade tipográfica para AproVE.
+
+Podes explorar um destaque gráfico subtil nas letras VE ou um símbolo geométrico relacionado com progresso, direcção, preparação ou conclusão.
+
+Não utilizar símbolos oficiais ou elementos que imitem a identidade visual de instituições públicas.
+
+O logótipo deve funcionar em fundos claros e escuros, em tamanhos grandes e pequenos.
+
+COMPONENTES VISUAIS:
+
+Cria um sistema consistente de:
+- Botões primários e secundários.
+- Cartões.
+- Campos de formulário.
+- Menus.
+- Modais.
+- Alertas.
+- Notificações.
+- Badges de estado.
+- Barras de progresso.
+- Indicadores de desempenho.
+- Gráficos.
+- Tabelas.
+- Paginação.
+- Filtros.
+- Pesquisa.
+- Estados vazios.
+- Ecrãs de carregamento.
+- Mensagens de erro.
+- Confirmações de acções.
+
+Os componentes devem ser reutilizáveis e manter a mesma aparência em toda a plataforma.
+
+ANIMAÇÕES:
+
+Utiliza microinteracções discretas para melhorar a experiência:
+- Transições suaves.
+- Feedback visual nos botões.
+- Progresso dos simulados.
+- Confirmações de respostas.
+- Actualização dos indicadores.
+- Pequenas animações ao concluir uma tarefa.
+
+Não utilizar animações excessivas, efeitos pesados ou elementos que prejudiquem o desempenho.
+
+Respeita a preferência do utilizador por movimentos reduzidos quando configurada no dispositivo.
+
+==================================================
+5. EXPERIÊNCIA DO UTILIZADOR
+==================================================
+
+A aplicação deve ser concebida prioritariamente para telemóveis.
+
+Muitos utilizadores poderão aceder através de dispositivos Android, com diferentes tamanhos de ecrã, ligações à Internet variáveis e limitações de dados móveis.
+
+Por isso:
+- Prioriza o carregamento rápido.
+- Evita imagens excessivamente pesadas.
+- Optimiza fontes, scripts e recursos.
+- Utiliza layouts responsivos.
+- Evita páginas visualmente congestionadas.
+- Garante botões suficientemente grandes.
+- Facilita a leitura de textos longos.
+- Minimiza os passos necessários para começar um simulado.
+- Evita obrigar o utilizador a repetir informações.
+- Preserva o progresso quando for tecnicamente possível e seguro.
+- Apresenta mensagens claras quando uma operação falhar.
+
+A navegação deve ser intuitiva.
+
+O utilizador deve compreender rapidamente:
+1. Onde está.
+2. O que pode fazer.
+3. Qual é o próximo passo.
+4. O que está disponível gratuitamente.
+5. O que exige Premium.
+
+Nunca escondas informações importantes sobre preços, limitações, renovações ou condições de utilização.
+
+Não utilizes contadores falsos, vagas fictícias, testemunhos inventados ou mensagens artificiais de pessoas que alegadamente compraram.
+
+A persuasão deve basear-se no valor real da plataforma, na clareza dos benefícios, na demonstração das funcionalidades e na facilidade de utilização.
+
+==================================================
+6. WEBSITE PÚBLICO
+==================================================
+
+Cria uma página inicial completa, profissional e optimizada para conversão.
+
+A página deve ser capaz de apresentar a AproVE a alguém que nunca ouviu falar da marca.
+
+ESTRUTURA DO WEBSITE:
+
+A. CABEÇALHO
+
+Incluir:
+- Logótipo AproVE.
+- Início.
+- Como funciona.
+- Notícias.
+- Planos.
+- Entrar.
+- Criar conta.
+
+Em dispositivos móveis, utilizar um menu compacto, acessível e funcional.
+
+O cabeçalho pode tornar-se fixo durante a deslocação, desde que isso não prejudique a área útil do ecrã.
+
+B. SECÇÃO PRINCIPAL — HERO
+
+Utilizar como título principal:
+
+“O teu próximo passo começa com preparação.”
+
+Criar um subtítulo que explique que a AproVE ajuda candidatos a preparar-se para concursos através de conteúdos de estudo, exercícios, simulados e acompanhamento do progresso.
+
+Botão principal:
+“Começar a preparar-me”
+
+Botão secundário:
+“Conhecer a plataforma”
+
+Incluir um cartão visual relacionado com a preparação para concursos, sem simular resultados ou estatísticas inexistentes.
+
+A secção deve transmitir imediatamente:
+- O que é a AproVE.
+- Para quem foi criada.
+- Que problema resolve.
+- Como começar.
+
+C. CONCURSO EM DESTAQUE
+
+Apresentar o concurso MININT como a primeira área de preparação.
+
+O cartão deve poder mostrar:
+- Nome do concurso.
+- Estado informativo.
+- Áreas de preparação disponíveis.
+- Acesso aos conteúdos.
+- Data da última actualização das informações relevantes.
+- Ligação para a fonte oficial, quando aplicável.
+
+Não inventar datas de abertura, encerramento, provas, resultados ou requisitos de candidatura.
+
+Se não existir informação confirmada, apresentar uma mensagem transparente.
+
+D. COMO FUNCIONA
+
+Apresentar um percurso simples:
+
+1. Criar uma conta.
+2. Escolher o concurso.
+3. Estudar as matérias.
+4. Resolver exercícios e simulados.
+5. Analisar os resultados.
+6. Melhorar a preparação.
+
+Utilizar elementos visuais claros e responsivos.
+
+E. FUNCIONALIDADES
+
+Apresentar as funcionalidades realmente implementadas:
+- Centro de estudos.
+- Simulados.
+- Testes psicotécnicos.
+- Correcção de respostas.
+- Explicações.
+- Histórico de resultados.
+- Revisão de erros.
+- Plano de estudo.
+- Treinador de IA.
+- Acompanhamento do progresso.
+
+Não apresentar funcionalidades fictícias como se já estivessem disponíveis.
+
+Se alguma funcionalidade ainda não estiver operacional, não a anunciar como activa.
+
+F. PLANOS
+
+Apresentar de forma clara as diferenças entre o plano gratuito e o Premium.
+
+G. PROVA DE VALOR
+
+Demonstrar a utilidade da plataforma através de:
+- Exemplos de perguntas.
+- Demonstração de um simulado.
+- Explicação de uma resposta.
+- Demonstração do acompanhamento de progresso.
+
+Não inventar números de utilizadores, classificações, aprovações ou testemunhos.
+
+H. PERGUNTAS FREQUENTES
+
+Incluir questões sobre:
+- O que é a AproVE?
+- A AproVE é uma plataforma oficial do MININT?
+- Como criar uma conta?
+- O que está disponível gratuitamente?
+- Quais são os benefícios do Premium?
+- Como funciona o pagamento?
+- Como funciona a renovação?
+- Como aceder aos conteúdos?
+- Como funcionam os simulados?
+- Como cancelar ou deixar de renovar?
+- Como contactar o suporte?
+- Como funcionam os afiliados?
+
+I. RODAPÉ
+
+Incluir:
+- Sobre a AproVE.
+- Contacto e suporte.
+- Termos e condições.
+- Política de privacidade.
+- Política de pagamentos, cancelamentos e reembolsos.
+- Condições do programa de afiliados.
+- Aviso de independência institucional.
+- Direitos de autor.
+
+As páginas legais devem conter regras coerentes com o funcionamento real da aplicação e ser revistas antes do lançamento comercial.
+
+==================================================
+7. SISTEMA DE CONTAS E AUTENTICAÇÃO
+==================================================
+
+Implementa um sistema real de registo e autenticação.
+
+FUNCIONALIDADES:
+
+- Registo com os campos estritamente necessários.
+- Login.
+- Logout.
+- Recuperação de palavra-passe.
+- Confirmação de email, quando configurada.
+- Gestão de sessão.
+- Alteração de palavra-passe.
+- Gestão do perfil.
+- Protecção de rotas.
+- Mensagens claras de sucesso e erro.
+
+O registo deve ser simples e adaptado ao público angolano.
+
+Não exigir dados pessoais desnecessários.
+
+Utilizar validação tanto no frontend como no backend.
+
+Impedir acessos não autorizados a páginas privadas.
+
+As verificações de autorização devem ser feitas no servidor e reforçadas pelas políticas da base de dados.
+
+Não confiar apenas em variáveis do navegador, estados React, campos editáveis ou informações enviadas pelo cliente.
+
+==================================================
+8. SISTEMA DE PLANOS E MONETIZAÇÃO
+==================================================
+
+A AproVE terá dois planos principais.
+
+PLANO GRATUITO
+
+Preço:
+0 Kz.
+
+Benefícios:
+- Criar uma conta.
+- Consultar notícias e actualizações.
+- Aceder aos conteúdos públicos.
+- Realizar um simulado gratuito por dia.
+- Receber a correcção básica do simulado gratuito.
+- Consultar os resultados desse simulado.
+- Conhecer as funcionalidades da plataforma.
+
+O simulado gratuito deve proporcionar uma experiência real de aprendizagem.
+
+O sistema deve controlar o limite diário no backend, utilizando uma regra temporal consistente.
+
+Não permitir que o utilizador contorne facilmente o limite ao actualizar a página, mudar de dispositivo ou manipular o navegador.
+
+Definir claramente o momento em que o limite diário é reiniciado, tendo em conta uma referência temporal consistente e a utilização em Angola.
+
+PLANO PREMIUM MENSAL
+
+Preço:
+5.000 Kz por mês.
+
+Benefícios previstos:
+- Simulados ilimitados dentro de limites técnicos razoáveis.
+- Centro de estudos completo.
+- Acesso aos conteúdos Premium.
+- Banco de perguntas.
+- Testes psicotécnicos.
+- Explicações detalhadas.
+- Revisão de erros.
+- Histórico de desempenho.
+- Estatísticas de progresso.
+- Plano de preparação.
+- Treinador de IA.
+- Outras ferramentas de preparação efectivamente implementadas.
+
+PLANO PREMIUM VITALÍCIO
+
+Preço:
+25.000 Kz, num único pagamento.
+
+Benefícios:
+Acesso vitalício às funcionalidades Premium abrangidas pelos termos do plano.
+
+IMPORTANTE SOBRE O VITALÍCIO:
+
+Definir claramente o que significa acesso vitalício.
+
+O pagamento vitalício não deve ser apresentado como garantia de disponibilidade eterna de serviços externos, modelos de IA ou infra-estruturas de terceiros.
+
+Os termos devem esclarecer as condições de manutenção do serviço, os limites técnicos razoáveis, as alterações de funcionalidades e os casos em que serviços externos possam ser descontinuados.
+
+Não utilizar a palavra “vitalício” de forma enganosa.
+
+GESTÃO DE ASSINATURAS:
+
+Cada utilizador deve possuir um estado de acesso coerente com os registos existentes.
+
+Estados possíveis:
+- Gratuito.
+- Pagamento pendente.
+- Premium activo.
+- Premium expirado.
+- Cancelamento ou não renovação pendente, quando aplicável.
+- Acesso suspenso, quando justificado.
+
+O plano mensal deve ter uma data de início e uma data de expiração.
+
+A renovação mensal não deve ser presumida como automática se não existir uma integração de cobrança recorrente devidamente configurada.
+
+Se o pagamento for manual, a renovação só acontece depois da confirmação do pagamento.
+
+Após a expiração:
+- O acesso às funcionalidades Premium deve ser retirado automaticamente.
+- A conta do utilizador deve continuar a existir.
+- O histórico deve ser preservado conforme a política de retenção.
+- O utilizador deve poder regressar ao plano gratuito.
+
+Não eliminar os resultados ou a conta apenas porque uma assinatura expirou.
+
+==================================================
+9. PAGAMENTOS
+==================================================
+
+A plataforma deve suportar inicialmente um fluxo de pagamento manual compatível com os meios de pagamento efectivamente disponíveis em Angola.
+
+Os meios previstos podem incluir:
+- Multicaixa Express.
+- Transferência bancária por IBAN.
+
+Não inventar números de conta, credenciais, referências de pagamento ou integrações bancárias.
+
+Os dados oficiais de pagamento deverão ser configurados pelo proprietário no painel administrativo.
+
+FLUXO DE COMPRA:
+
+1. O utilizador escolhe o plano.
+2. O sistema apresenta o preço e as condições.
+3. O utilizador inicia o processo de pagamento.
+4. O sistema cria um registo de pagamento pendente.
+5. São apresentadas as instruções oficiais de pagamento.
+6. O utilizador envia o comprovativo, se esse procedimento for adoptado.
+7. O administrador verifica o pagamento.
+8. O administrador aprova ou rejeita o pagamento.
+9. Se aprovado, o sistema activa o plano correspondente.
+10. O sistema regista a data, o valor, o plano e o período de acesso.
+11. O utilizador recebe uma notificação de confirmação.
+12. O painel administrativo reflecte a alteração.
+
+O envio de um comprovativo não deve activar automaticamente o Premium.
+
+Uma imagem ou documento carregado pelo utilizador não prova, por si só, que o dinheiro entrou na conta.
+
+O acesso só deve ser activado após uma confirmação válida.
+
+ESTADOS DOS PAGAMENTOS:
+
+- Pendente.
+- Em verificação.
+- Aprovado.
+- Rejeitado.
+- Cancelado.
+- Reembolsado, se aplicável.
+
+Regras importantes:
+- Evitar activar duas vezes a mesma compra.
+- Evitar registar duas vezes o mesmo pagamento.
+- Guardar o histórico das transições de estado.
+- Validar os valores e o plano no backend.
+- Não permitir que o utilizador aprove o próprio pagamento.
+- Não permitir que um utilizador altere o valor de uma compra através do navegador.
+- Não guardar dados bancários sensíveis desnecessários.
+- Proteger os comprovativos contra acesso público indevido.
+- Definir procedimentos para compras duplicadas, erros e reembolsos.
+
+Preparar a arquitectura para integrar um gateway de pagamentos no futuro, sem obrigar a reconstruir o sistema de assinaturas.
+
+==================================================
+10. PAINEL DO CANDIDATO
+==================================================
+
+Depois de iniciar sessão, o utilizador deve ser encaminhado para um dashboard pessoal.
+
+O painel deve incluir:
+
+A. BOAS-VINDAS
+
+Apresentar uma mensagem contextual e discreta.
+
+B. CONTINUAR A PREPARAÇÃO
+
+Permitir retomar uma actividade, quando existir progresso guardado.
+
+C. ACESSO RÁPIDO
+
+- Começar simulado.
+- Continuar a estudar.
+- Rever erros.
+- Consultar resultados.
+- Abrir o Treinador de IA.
+- Consultar o plano de estudo.
+
+D. PROGRESSO
+
+Apresentar apenas dados reais calculados a partir da actividade do utilizador:
+- Simulados realizados.
+- Número de respostas.
+- Percentagem de acerto.
+- Evolução das classificações.
+- Matérias com melhor desempenho.
+- Matérias que precisam de atenção.
+- Tempo de estudo registado, quando medido de forma fiável.
+
+Não apresentar estatísticas fictícias para tornar o dashboard mais atractivo.
+
+E. ESTADO DA CONTA
+
+Mostrar:
+- Plano actual.
+- Estado da assinatura.
+- Data de expiração, quando aplicável.
+- Funcionalidades disponíveis.
+- Opção de consultar planos.
+
+F. RECOMENDAÇÕES
+
+Gerar recomendações com base no histórico real.
+
+Exemplo de lógica:
+Se o utilizador apresentar dificuldades recorrentes numa matéria, recomendar conteúdos e exercícios relacionados.
+
+Não recomendar uma matéria com base em resultados inexistentes.
+
+G. NOTIFICAÇÕES
+
+Mostrar avisos relevantes sobre:
+- Pagamentos.
+- Activação de planos.
+- Expiração de assinaturas.
+- Actualizações importantes.
+- Progresso e actividades, quando configuradas.
+
+Permitir gerir notificações quando necessário.
+
+==================================================
+11. CENTRO DE ESTUDOS
+==================================================
+
+Cria um centro de estudos organizado por concurso, área de avaliação, matéria e tema.
+
+ESTRUTURA:
+
+Concurso
+→ Área de avaliação
+→ Matéria
+→ Tema
+→ Conteúdo
+→ Exercícios
+→ Revisão.
+
+O administrador deve poder criar diferentes concursos e organizar os conteúdos sem alterar o código da aplicação.
+
+Cada conteúdo poderá incluir:
+- Título.
+- Descrição.
+- Matéria.
+- Tema.
+- Objectivos de aprendizagem.
+- Explicação.
+- Resumo.
+- Exemplos.
+- Exercícios.
+- Perguntas de revisão.
+- Referências.
+- Fonte.
+- Data de criação.
+- Data de actualização.
+- Estado de publicação.
+- Nível de acesso.
+
+O conteúdo deve ser fácil de ler no telemóvel.
+
+Utiliza títulos, subtítulos, listas, tabelas e blocos de destaque quando forem úteis.
+
+Permitir marcar um conteúdo como concluído e retomar a leitura, quando tecnicamente viável.
+
+Distinguir claramente:
+- Conteúdo de acesso público.
+- Conteúdo gratuito para utilizadores autenticados.
+- Conteúdo Premium.
+
+A protecção dos conteúdos Premium deve ser aplicada no backend, não apenas através de elementos visuais.
+
+==================================================
+12. SIMULADOS E BANCO DE PERGUNTAS
+==================================================
+
+Esta é uma das funcionalidades centrais da AproVE.
+
+Cria um sistema real de gestão de perguntas e realização de simulados.
+
+BANCO DE PERGUNTAS
+
+Cada pergunta deve suportar, quando aplicável:
+- Enunciado.
+- Tipo de pergunta.
+- Opções de resposta.
+- Resposta correcta.
+- Explicação.
+- Matéria.
+- Tema.
+- Dificuldade.
+- Fonte.
+- Referência.
+- Tipo de origem.
+- Estado de revisão.
+- Estado de publicação.
+- Concurso associado.
+- Data de criação.
+- Data de actualização.
+
+TIPOS DE ORIGEM:
+
+1. Pergunta oficial autorizada.
+2. Pergunta de exame anterior com origem identificada e utilização permitida.
+3. Exercício original.
+4. Exercício gerado por IA.
+5. Pergunta importada de uma fonte devidamente identificada.
+
+Não classificar uma pergunta como oficial apenas porque parece credível.
+
+Respeitar direitos de autor e condições de utilização das fontes.
+
+SIMULADOS:
+
+Permitir criar:
+- Simulados gerais.
+- Simulados por matéria.
+- Simulados por tema.
+- Simulados psicotécnicos.
+- Simulados cronometrados.
+- Simulados de revisão.
+- Simulados personalizados, quando aplicável.
+
+Cada simulado poderá definir:
+- Nome.
+- Descrição.
+- Concurso.
+- Matérias.
+- Número de perguntas.
+- Duração.
+- Pontuação.
+- Critério de correcção.
+- Nível de dificuldade.
+- Disponibilidade.
+- Limite de tentativas, se aplicável.
+- Requisitos de acesso.
+- Estado de publicação.
+
+ECRÃ DE REALIZAÇÃO:
+
+Apresentar:
+- Enunciado.
+- Opções.
+- Número da pergunta.
+- Progresso.
+- Cronómetro.
+- Navegação entre perguntas.
+- Possibilidade de alterar respostas antes da submissão, quando aplicável.
+- Botão de submissão.
+- Confirmação antes de terminar.
+
+A experiência deve funcionar bem em ecrãs pequenos.
+
+O sistema deve guardar as respostas de forma segura e consistente.
+
+Quando possível, guardar o progresso temporário para reduzir perdas provocadas por falhas de ligação ou actualização da página.
+
+A submissão final deve ser tratada de forma idempotente: repetir o mesmo pedido não pode produzir várias tentativas ou vários resultados para uma única submissão.
+
+CORRECÇÃO:
+
+A classificação deve ser calculada de acordo com as regras definidas para o simulado.
+
+A resposta correcta nunca deve ser aceite exclusivamente a partir de um valor enviado pelo navegador.
+
+As respostas oficiais do banco de perguntas devem ser obtidas e utilizadas de forma segura no processo de correcção.
+
+RESULTADOS:
+
+Apresentar:
+- Pontuação.
+- Percentagem de acerto.
+- Respostas correctas.
+- Respostas incorrectas.
+- Perguntas não respondidas.
+- Explicações.
+- Tempo utilizado.
+- Revisão das perguntas.
+- Recomendações de estudo.
+
+Não inventar classificações ou resultados.
+
+HISTÓRICO:
+
+Cada tentativa deve estar associada ao utilizador correcto, ao simulado, à data e às respostas registadas.
+
+Impedir que um utilizador altere a classificação ou consulte resultados privados de outros candidatos.
+
+==================================================
+13. TESTES PSICOTÉCNICOS
+==================================================
+
+Criar uma área dedicada ao treino psicotécnico.
+
+Poderá incluir:
+- Raciocínio lógico.
+- Sequências numéricas.
+- Sequências de figuras.
+- Analogias.
+- Identificação de padrões.
+- Atenção e concentração.
+- Relações entre elementos.
+- Problemas de lógica.
+- Exercícios de rapidez e precisão.
+
+Cada exercício deve apresentar instruções claras.
+
+Sempre que aplicável, disponibilizar:
+- Resposta correcta.
+- Explicação.
+- Tempo utilizado.
+- Nível de dificuldade.
+- Desempenho por categoria.
+
+O conteúdo deve ser apresentado como treino e preparação.
+
+Não afirmar que estes exercícios reproduzem exactamente os testes oficiais do MININT sem documentação que confirme essa correspondência.
+
+Não prometer aprovação em avaliações psicológicas.
+
+==================================================
+14. TREINADOR DE INTELIGÊNCIA ARTIFICIAL
+==================================================
+
+Implementa um assistente de IA integrado na AproVE.
+
+Nome funcional:
+“Meu Treinador AproVE”.
+
+O assistente deverá ajudar o candidato a:
+- Compreender matérias.
+- Esclarecer dúvidas.
+- Obter explicações passo a passo.
+- Criar exercícios de prática.
+- Rever respostas incorrectas.
+- Identificar dificuldades.
+- Organizar sessões de estudo.
+- Criar planos de preparação.
+- Praticar raciocínio lógico.
+- Resumir conteúdos.
+- Explicar conceitos difíceis com linguagem simples.
+- Recomendar temas para revisão.
+
+A IA deve ter acesso apenas aos dados necessários para responder.
+
+Sempre que responder sobre matérias específicas do concurso, deve privilegiar os conteúdos e as fontes disponíveis na plataforma.
+
+FONTES E REFERÊNCIAS:
+
+Quando uma resposta depender de informação factual sobre legislação, instituições públicas, regulamentos ou concursos, o assistente deve utilizar fontes verificáveis, sempre que disponíveis.
+
+As referências devem identificar claramente a origem da informação.
+
+Não inventar:
+- Artigos de lei.
+- Regulamentos.
+- Datas.
+- Requisitos.
+- Critérios de selecção.
+- Resultados.
+- Citações.
+- Fontes.
+- Respostas oficiais.
+
+Se não existir informação suficiente, o assistente deve dizê-lo claramente.
+
+A IA deve distinguir:
+- Informação oficial confirmada.
+- Explicação educativa.
+- Exercício original.
+- Hipótese ou interpretação.
+- Informação ainda não verificada.
+
+Não apresentar o assistente como uma autoridade oficial do MININT.
+
+CONTROLO DE CUSTOS:
+
+Implementar:
+- Limites de utilização por plano.
+- Limites de tamanho dos pedidos.
+- Protecção contra abuso.
+- Limites de frequência.
+- Controlo de consumo.
+- Mensagens quando o limite for atingido.
+- Tratamento de erros do fornecedor.
+- Possibilidade de desligar temporariamente a funcionalidade.
+- Registo técnico mínimo necessário para monitorizar falhas.
+
+Os limites exactos devem ser configuráveis no painel administrativo.
+
+A chave da API deve existir apenas em ambiente seguro no backend.
+
+Nunca expor a chave no JavaScript enviado ao navegador.
+
+Se o serviço de IA falhar, a plataforma deve continuar a permitir estudar e realizar simulados previamente publicados.
+
+Não tornar o funcionamento central da AproVE dependente da disponibilidade constante da IA.
+
+==================================================
+15. CRIAÇÃO AUTOMATIZADA DE CONTEÚDOS
+==================================================
+
+Quero utilizar a inteligência artificial para reduzir o trabalho manual de produção de conteúdos.
+
+Cria uma arquitectura que permita desenvolver um pipeline de produção assistida por IA.
+
+O pipeline deve permitir:
+
+1. Identificar uma matéria.
+2. Definir os objectivos de aprendizagem.
+3. Reunir fontes credíveis.
+4. Organizar as informações.
+5. Produzir um resumo.
+6. Criar explicações.
+7. Gerar perguntas.
+8. Criar opções de resposta.
+9. Propor respostas correctas.
+10. Produzir explicações para cada resposta.
+11. Classificar as perguntas por tema e dificuldade.
+12. Verificar a consistência interna.
+13. Detectar perguntas duplicadas.
+14. Procurar contradições e possíveis erros.
+15. Identificar afirmações sem suporte suficiente.
+16. Associar referências.
+17. Guardar o conteúdo como rascunho.
+18. Permitir validação e publicação.
+
+A plataforma deve conseguir gerar conteúdos em quantidade, mas a geração em massa não deve significar publicação automática e indiscriminada de informações factuais.
+
+Implementa níveis de confiança e regras de revisão proporcionais ao risco.
+
+Conteúdos educativos gerais podem ter um fluxo de revisão mais simples.
+
+Informações críticas, como datas de concursos, requisitos oficiais, legislação, respostas que dependam de normas específicas e alegações de correspondência com exames oficiais devem exigir evidência verificável e um controlo mais rigoroso antes da publicação.
+
+O objectivo é automatizar o máximo possível, mantendo credibilidade e reduzindo a probabilidade de erros.
+
+Os conteúdos gerados devem ser identificados internamente quanto à sua origem.
+
+Nunca inventar um programa oficial para preencher lacunas.
+
+Se o programa exacto de uma prova não estiver disponível, criar uma proposta de estudo claramente identificada como orientação geral, e não como programa oficial confirmado.
+
+==================================================
+16. NOTÍCIAS E ACTUALIZAÇÕES
+==================================================
+
+Cria uma área pública de notícias.
+
+As notícias devem ser gratuitas.
+
+Cada publicação deverá permitir:
+- Título.
+- Resumo.
+- Conteúdo.
+- Categoria.
+- Fonte.
+- URL da fonte.
+- Data da publicação.
+- Data da verificação.
+- Data da última actualização.
+- Estado.
+- Imagem opcional.
+- Autor ou responsável editorial, quando aplicável.
+
+CATEGORIAS POSSÍVEIS:
+- Concursos públicos.
+- MININT.
+- Comunicados oficiais.
+- Prazos e procedimentos.
+- Actualizações.
+- Oportunidades relevantes.
+
+FONTES:
+
+Dar prioridade a documentos, páginas e comunicados oficiais da instituição responsável.
+
+A IA pode ajudar a procurar, resumir, organizar e comparar informações, desde que as ferramentas de recolha estejam efectivamente configuradas.
+
+Não afirmar que existe monitorização automática se essa funcionalidade não estiver implementada.
+
+Não publicar automaticamente informações sensíveis sem os controlos necessários.
+
+FLUXO RECOMENDADO:
+
+Recolha de informação
+→ Identificação da fonte
+→ Análise
+→ Resumo
+→ Verificação
+→ Publicação
+→ Actualização ou arquivo.
+
+A publicação deve distinguir a data do acontecimento, quando conhecida, da data em que a notícia foi publicada.
+
+Não inventar datas ou declarações.
+
+Se uma informação não estiver confirmada, identificá-la como não confirmada ou não a publicar.
+
+==================================================
+17. PROGRAMA DE AFILIADOS
+==================================================
+
+Implementa um programa de afiliados integrado na AproVE.
+
+O programa deve permitir que utilizadores elegíveis recomendem a plataforma e recebam comissões sobre novas compras válidas, segundo as regras abaixo.
+
+NÍVEIS:
+
+BRONZE:
+1 a 9 pessoas convidadas que cumpram as condições de contagem definidas.
+
+Comissão:
+30%.
+
+PRATA:
+10 a 19 pessoas convidadas que cumpram as condições de contagem definidas.
+
+Comissão:
+40%.
+
+OURO:
+20 ou mais pessoas convidadas que cumpram as condições de contagem definidas.
+
+Comissão:
+50%.
+
+DESCONTO PARA O CLIENTE INDICADO:
+10%.
+
+IMPORTANTE:
+
+A expressão “pessoas convidadas” deve ser definida de forma precisa na implementação.
+
+Para evitar fraude e inconsistências, a regra de contagem deve utilizar preferencialmente clientes referidos que tenham efectuado uma primeira compra válida e paga, em vez de simples registos sem pagamento.
+
+A comissão deve ser atribuída uma única vez por cliente e pela compra elegível correspondente.
+
+Não atribuir automaticamente comissões recorrentes sobre todas as renovações mensais.
+
+O sistema deve aplicar o nível correspondente às regras de elegibilidade e à política de comissões em vigor.
+
+A regra de actualização do nível deve ser clara, consistente e documentada.
+
+Não permitir alterações retroactivas arbitrárias das comissões já aprovadas.
+
+ATRIBUIÇÃO DE REFERÊNCIAS:
+
+Cada afiliado deve ter:
+- Identificador próprio.
+- Link de referência.
+- Código de referência opcional.
+- Total de registos atribuídos.
+- Total de clientes pagantes válidos.
+- Número de compras elegíveis.
+- Nível actual.
+- Comissão gerada.
+- Comissão pendente.
+- Comissão aprovada.
+- Comissão paga.
+- Histórico de transacções.
+
+O sistema deve associar a compra ao afiliado de acordo com regras transparentes de atribuição.
+
+Definir uma janela de atribuição configurável e documentada.
+
+Evitar atribuir a mesma compra a vários afiliados.
+
+Impedir que um afiliado altere a referência de uma compra depois da confirmação do pagamento.
+
+REGRAS FINANCEIRAS:
+
+O desconto de 10% ao cliente deve ser calculado de forma consistente.
+
+A comissão deve ser calculada sobre a base definida nas condições do programa.
+
+Para este projecto, utiliza como regra inicial a comissão sobre o valor efectivamente recebido após o desconto, antes de outros custos operacionais, salvo se as condições forem posteriormente alteradas de forma transparente.
+
+Exemplo ilustrativo para o plano mensal:
+
+Preço original: 5.000 Kz.
+Desconto: 500 Kz.
+Valor recebido: 4.500 Kz.
+
+Bronze:
+30% de 4.500 Kz = 1.350 Kz.
+
+Prata:
+40% de 4.500 Kz = 1.800 Kz.
+
+Ouro:
+50% de 4.500 Kz = 2.250 Kz.
+
+Estes valores são exemplos de cálculo, não garantias de rendimento.
+
+Não apresentar o valor restante como lucro líquido, porque ainda podem existir custos operacionais, impostos, taxas e despesas com serviços.
+
+Para o plano vitalício, aplicar o mesmo princípio, utilizando o valor efectivamente recebido após o desconto.
+
+CONTROLO DE COMISSÕES:
+
+Cada comissão deve ter:
+- Identificador.
+- Afiliado.
+- Cliente referido.
+- Compra correspondente.
+- Plano.
+- Valor recebido.
+- Percentagem aplicável.
+- Valor da comissão.
+- Data.
+- Estado.
+- Histórico de alterações.
+
+ESTADOS:
+
+- Pendente.
+- Em verificação.
+- Aprovada.
+- Paga.
+- Suspensa.
+- Anulada, quando aplicável.
+
+Uma venda aprovada não significa que a comissão já foi paga.
+
+Manter os estados separados.
+
+PAGAMENTO DE COMISSÕES:
+
+- O pagamento é realizado manualmente pelo proprietário.
+- O mínimo de pagamento é 5.000 Kz.
+- O objectivo operacional é pagar até 24 horas após a elegibilidade e aprovação, sujeito às condições de verificação, disponibilidade operacional e regras publicadas.
+- O administrador regista a data, o valor e o método de pagamento.
+- Depois de efectuar o pagamento, marca a comissão ou o conjunto de comissões como pago.
+- O sistema conserva o histórico.
+
+Não prometer pagamentos automáticos, porque não haverá uma integração automática de transferências na fase inicial.
+
+PROTECÇÃO CONTRA FRAUDE:
+
+Implementar regras contra:
+- Auto-referências indevidas.
+- Compras duplicadas.
+- Criação abusiva de contas.
+- Manipulação dos links.
+- Reutilização indevida de referências.
+- Pagamentos falsos.
+- Cancelamentos destinados a gerar comissões.
+- Reembolsos após comissões indevidamente aprovadas.
+
+Definir o tratamento das compras canceladas, reembolsadas, duplicadas ou consideradas fraudulentas.
+
+As comissões suspeitas podem ficar suspensas para verificação.
+
+Não confundir suspeita com prova definitiva de fraude.
+
+ÁREA DO AFILIADO:
+
+Criar um dashboard com:
+- Link pessoal.
+- Botão para copiar.
+- Explicação de como funciona.
+- Registos atribuídos.
+- Clientes pagantes válidos.
+- Nível actual.
+- Percentagem de comissão.
+- Total gerado.
+- Saldo pendente.
+- Saldo aprovado.
+- Saldo pago.
+- Histórico.
+- Regras e condições.
+- Estado do limite mínimo de levantamento.
+
+A interface deve ser simples e compreensível.
+
+==================================================
+18. PAINEL ADMINISTRATIVO
+==================================================
+
+Cria um painel administrativo profissional, protegido e totalmente funcional.
+
+O acesso deve ser reservado a utilizadores autorizados.
+
+A autorização administrativa deve ser verificada no backend, através de uma estrutura de permissões segura.
+
+Não basta esconder o botão de administração no frontend.
+
+DASHBOARD PRINCIPAL:
+
+Apresentar dados reais:
+- Total de utilizadores.
+- Utilizadores gratuitos.
+- Premium activos.
+- Premium expirados.
+- Pagamentos pendentes.
+- Pagamentos aprovados.
+- Vendas.
+- Receita registada.
+- Comissões pendentes.
+- Comissões aprovadas.
+- Comissões pagas.
+- Conteúdos publicados.
+- Simulados disponíveis.
+- Actividade recente, quando aplicável.
+
+Os valores devem ser calculados a partir dos registos reais da base de dados.
+
+Não utilizar números de demonstração em produção.
+
+A. GESTÃO DE UTILIZADORES
+
+Permitir:
+- Pesquisar utilizadores.
+- Filtrar por estado.
+- Consultar perfil.
+- Consultar plano.
+- Consultar histórico de pagamentos.
+- Consultar estado da assinatura.
+- Activar Premium após confirmação válida.
+- Definir a duração do acesso.
+- Renovar o acesso.
+- Suspender acessos, quando justificado.
+- Bloquear abusos.
+- Consultar dados relevantes para suporte.
+
+B. GESTÃO DE CONCURSOS E MATÉRIAS
+
+Permitir:
+- Criar concursos.
+- Editar concursos.
+- Arquivar concursos.
+- Criar áreas de avaliação.
+- Criar matérias.
+- Criar temas.
+- Organizar a estrutura de estudo.
+- Configurar níveis de acesso.
+
+C. GESTÃO DE CONTEÚDOS
+
+Permitir:
+- Criar conteúdos.
+- Editar.
+- Guardar rascunhos.
+- Publicar.
+- Arquivar.
+- Consultar fontes.
+- Registar datas de actualização.
+- Definir o nível de acesso.
+- Associar conteúdos a concursos e matérias.
+
+D. BANCO DE PERGUNTAS
+
+Permitir:
+- Criar perguntas.
+- Editar perguntas.
+- Importar perguntas através de formatos documentados, como CSV ou JSON, se implementados.
+- Definir opções.
+- Definir respostas correctas.
+- Acrescentar explicações.
+- Associar fontes.
+- Definir dificuldade.
+- Identificar a origem.
+- Rever e publicar.
+- Detectar possíveis duplicados.
+- Arquivar perguntas.
+
+A importação deve validar os dados antes de os guardar e apresentar erros de forma compreensível.
+
+E. GESTÃO DE SIMULADOS
+
+Permitir:
+- Criar simulados.
+- Seleccionar perguntas.
+- Definir tempo.
+- Definir pontuação.
+- Configurar acesso gratuito ou Premium.
+- Publicar.
+- Suspender.
+- Consultar estatísticas de utilização.
+- Consultar problemas reportados.
+
+F. GESTÃO DE NOTÍCIAS
+
+Permitir:
+- Criar notícias.
+- Editar.
+- Associar fontes.
+- Guardar rascunhos.
+- Publicar.
+- Actualizar.
+- Arquivar.
+
+G. PAGAMENTOS E ASSINATURAS
+
+Permitir:
+- Consultar pagamentos.
+- Aprovar pagamentos.
+- Rejeitar pagamentos.
+- Consultar comprovativos autorizados.
+- Activar assinaturas.
+- Consultar expirações.
+- Registar renovações.
+- Consultar histórico.
+- Tratar situações duplicadas.
+- Registar reembolsos, quando aplicável.
+
+H. AFILIADOS E COMISSÕES
+
+Permitir:
+- Consultar afiliados.
+- Consultar níveis.
+- Consultar compras atribuídas.
+- Consultar comissões.
+- Aprovar comissões.
+- Suspender comissões.
+- Registar pagamentos.
+- Marcar comissões como pagas.
+- Consultar histórico.
+
+I. CONFIGURAÇÕES
+
+Permitir gerir, com validação e permissões adequadas:
+- Preço mensal.
+- Preço vitalício.
+- Desconto de referência.
+- Percentagens de comissão.
+- Regras de atribuição.
+- Limites do plano gratuito.
+- Limites de utilização de IA.
+- Duração das assinaturas.
+- Informações de pagamento.
+- Contactos de suporte.
+- Avisos e mensagens.
+- Configurações de funcionalidades.
+
+Não permitir que uma alteração de preço ou de comissão modifique silenciosamente transacções históricas.
+
+J. GESTÃO DE ACESSOS
+
+Apenas o proprietário ou um administrador autorizado deve poder executar operações sensíveis.
+
+Não permitir que um administrador sem permissões suficientes altere configurações financeiras críticas.
+
+Mesmo na primeira versão, implementar as verificações essenciais de autorização.
+
+==================================================
+19. ESTRUTURA DA BASE DE DADOS
+==================================================
+
+Desenha uma base de dados relacional consistente, com chaves, relações, índices e restrições adequadas.
+
+As entidades principais devem incluir, conforme necessário:
+
+1. profiles
+2. user_roles
+3. competitions
+4. evaluation_areas
+5. subjects
+6. topics
+7. study_contents
+8. content_sources
+9. questions
+10. question_options
+11. quizzes
+12. quiz_questions
+13. quiz_attempts
+14. quiz_answers
+15. study_progress
+16. study_plans
+17. ai_conversations
+18. ai_usage_records
+19. subscription_plans
+20. subscriptions
+21. payments
+22. payment_events
+23. affiliate_profiles
+24. referral_attributions
+25. affiliate_commissions
+26. affiliate_payouts
+27. news_articles
+28. notifications
+29. platform_settings
+30. support_requests, se necessário.
+
+Podes ajustar a estrutura, criar tabelas auxiliares ou separar entidades, desde que a solução seja coerente e bem documentada.
+
+REGRAS DA BASE DE DADOS:
+
+- Utilizar identificadores únicos.
+- Definir chaves estrangeiras.
+- Criar índices para consultas frequentes.
+- Impedir relações inconsistentes.
+- Evitar duplicação desnecessária.
+- Definir datas de criação e actualização.
+- Garantir integridade referencial.
+- Utilizar transacções para operações financeiras e outras operações críticas.
+- Utilizar restrições de unicidade onde forem necessárias.
+- Criar migrations versionadas.
+- Documentar as relações principais.
+
+Não guardar segredos em tabelas acessíveis aos utilizadores.
+
+A estrutura deve permitir acrescentar novos concursos, matérias e planos sem reconstruir a base de dados.
+
+==================================================
+20. SEGURANÇA
+==================================================
+
+A segurança é um requisito obrigatório desde a primeira versão.
+
+Não deixar a segurança para uma fase posterior.
+
+Implementar:
+
+A. AUTENTICAÇÃO
+
+Utilizar um sistema de autenticação confiável.
+
+B. AUTORIZAÇÃO
+
+Aplicar permissões de acesso tanto no backend como na base de dados.
+
+C. ROW LEVEL SECURITY
+
+Criar e testar políticas RLS em todas as tabelas expostas através da API do Supabase.
+
+As políticas devem permitir que cada utilizador aceda apenas aos dados que lhe pertencem ou aos dados que tem autorização para consultar.
+
+D. PROTECÇÃO DE ASSINATURAS
+
+Um utilizador não pode atribuir Premium a si próprio, alterar a data de expiração ou modificar o estado do pagamento.
+
+E. PROTECÇÃO DE RESULTADOS
+
+Um utilizador não pode modificar directamente a pontuação final ou aceder aos resultados privados de outras pessoas.
+
+F. PROTECÇÃO DE PAGAMENTOS
+
+A aprovação de pagamentos deve exigir autorização administrativa válida.
+
+G. PROTECÇÃO DE AFILIADOS
+
+Um afiliado não pode criar ou aprovar as próprias comissões.
+
+H. SEGREDOS
+
+Nunca colocar chaves privadas, credenciais de serviço ou segredos de administração no frontend, em repositórios públicos ou em mensagens de erro.
+
+I. VALIDAÇÃO
+
+Validar todos os dados recebidos no servidor.
+
+J. LIMITES DE PEDIDOS
+
+Implementar protecção contra abuso nas operações sensíveis, incluindo autenticação, simulados, pagamentos e IA.
+
+K. PROTECÇÃO CONTRA INJECÇÕES
+
+Utilizar consultas parametrizadas e os mecanismos seguros das bibliotecas utilizadas.
+
+L. ARQUIVOS
+
+Validar tipos, tamanhos e permissões de ficheiros enviados.
+
+M. ERROS
+
+Não expor informações internas, credenciais ou detalhes desnecessários da infraestrutura ao utilizador.
+
+N. SESSÕES
+
+Configurar correctamente sessões, expiração e revogação de acessos.
+
+O. REGISTOS TÉCNICOS
+
+Guardar apenas os registos necessários para diagnóstico, segurança e funcionamento, evitando recolher informações sensíveis desnecessárias.
+
+P. OPERAÇÕES ADMINISTRATIVAS
+
+Proteger alterações de preços, permissões, pagamentos, comissões e configurações críticas.
+
+Q. BACKUPS E RECUPERAÇÃO
+
+Documentar os mecanismos disponíveis de cópia de segurança e recuperação.
+
+Não assumir que existe um backup automático sem confirmar a configuração do serviço utilizado.
+
+R. PRIVACIDADE
+
+Recolher apenas os dados necessários, explicar a sua utilização e disponibilizar mecanismos adequados para pedidos de acesso, correcção ou eliminação de dados, de acordo com os requisitos legais aplicáveis.
+
+Antes do lançamento, rever a conformidade com a legislação aplicável em Angola e com as condições dos fornecedores utilizados.
+
+S. AUDITORIA ESSENCIAL
+
+Manter um histórico mínimo das operações administrativas e financeiras sensíveis.
+
+Não é necessário começar com um sistema empresarial complexo de auditoria, mas as operações críticas devem poder ser rastreadas.
+
+==================================================
+21. RANKING E MOTIVAÇÃO
+==================================================
+
+Criar uma área de desempenho que incentive o estudo regular.
+
+Poderá incluir:
+- Melhores resultados.
+- Evolução.
+- Consistência de estudo.
+- Desempenho por matéria.
+- Objectivos pessoais.
+- Metas de preparação.
+
+O ranking deve utilizar regras claras.
+
+Não atribuir vantagem académica artificial a quem paga Premium.
+
+O pagamento deve desbloquear ferramentas de preparação, não alterar a classificação de um simulado.
+
+Permitir a utilização de um pseudónimo público, sem expor desnecessariamente a identidade real.
+
+Não divulgar resultados individuais privados sem autorização.
+
+Evitar rankings que incentivem fraude ou exploração de vulnerabilidades.
+
+A motivação deve servir para ajudar o candidato a melhorar, e não para humilhar quem apresenta resultados inferiores.
+
+==================================================
+22. NOTIFICAÇÕES E COMUNICAÇÃO
+==================================================
+
+Implementar notificações internas para acontecimentos relevantes.
+
+Exemplos:
+- Pagamento aprovado.
+- Pagamento rejeitado.
+- Premium activado.
+- Assinatura próxima da expiração.
+- Assinatura expirada.
+- Nova notícia relevante.
+- Actualização de conteúdos.
+- Resultado de um simulado.
+- Avisos relacionados com afiliados.
+
+As notificações devem ser geradas a partir de acontecimentos reais.
+
+Não criar mensagens fictícias de compras recentes ou de outros utilizadores.
+
+As notificações por email podem ser acrescentadas através de um fornecedor configurado.
+
+Não simular o envio de um email quando o serviço não estiver ligado.
+
+Se o envio de emails não estiver configurado, disponibilizar as notificações internas e documentar a integração pendente.
+
+==================================================
+23. ACESSIBILIDADE E DESEMPENHO
+==================================================
+
+Implementar boas práticas de acessibilidade.
+
+Incluir:
+- Contraste adequado.
+- Navegação por teclado.
+- Etiquetas acessíveis.
+- Foco visível.
+- Mensagens de erro compreensíveis.
+- Estrutura semântica.
+- Compatibilidade com leitores de ecrã, dentro das possibilidades da interface.
+- Respeito pelas preferências de movimento reduzido.
+
+DESEMPENHO:
+
+- Evitar dependências desnecessárias.
+- Carregar módulos de forma progressiva.
+- Optimizar imagens.
+- Reduzir consultas repetidas.
+- Implementar paginação em listas grandes.
+- Evitar carregamentos desnecessários.
+- Utilizar índices de base de dados adequados.
+- Prevenir consultas ineficientes.
+- Mostrar estados de carregamento claros.
+- Evitar bloquear toda a interface quando uma operação secundária falhar.
+
+A aplicação deve funcionar de forma aceitável em ligações móveis variáveis.
+
+==================================================
+24. SEO E DESCOBERTA
+==================================================
+
+Optimizar as páginas públicas para motores de pesquisa.
+
+Implementar:
+- Títulos específicos.
+- Meta descriptions.
+- URLs legíveis.
+- Estrutura semântica.
+- Open Graph.
+- Imagens de partilha adequadas.
+- Sitemap.
+- Robots.txt.
+- Canonical URLs, quando necessário.
+- Dados estruturados adequados, quando aplicáveis.
+
+As páginas privadas devem ser protegidas contra indexação indevida.
+
+Não permitir que resultados privados, perfis, dados de pagamentos ou conteúdos protegidos apareçam nos motores de pesquisa.
+
+O conteúdo público deve explicar a utilidade da AproVE sem sugerir afiliação oficial a instituições públicas.
+
+==================================================
+25. ESTRUTURA DAS PÁGINAS
+==================================================
+
+ORGANIZA A APLICAÇÃO NAS SEGUINTES ÁREAS:
+
+ÁREA PÚBLICA:
+
+1. Página inicial.
+2. Como funciona.
+3. Notícias.
+4. Detalhe da notícia.
+5. Planos.
+6. Registo.
+7. Login.
+8. Recuperação de palavra-passe.
+9. Sobre a AproVE.
+10. Programa de afiliados.
+11. Termos e condições.
+12. Política de privacidade.
+13. Política de pagamentos e reembolsos.
+14. Condições de afiliados.
+15. Contacto e suporte.
+
+ÁREA DO CANDIDATO:
+
+16. Dashboard.
+17. Centro de estudos.
+18. Lista de concursos.
+19. Detalhe do concurso.
+20. Áreas de avaliação.
+21. Matérias.
+22. Temas.
+23. Conteúdo de estudo.
+24. Lista de simulados.
+25. Configuração do simulado.
+26. Realização do simulado.
+27. Resultados.
+28. Revisão das respostas.
+29. Testes psicotécnicos.
+30. Meu Treinador AproVE.
+31. Plano de estudo.
+32. Progresso.
+33. Histórico.
+34. Ranking.
+35. Conta.
+36. Assinatura.
+37. Planos e pagamentos.
+38. Notificações.
+39. Área de afiliados.
+40. Suporte.
+
+ÁREA ADMINISTRATIVA:
+
+41. Dashboard administrativo.
+42. Utilizadores.
+43. Concursos.
+44. Áreas de avaliação.
+45. Matérias e temas.
+46. Conteúdos.
+47. Fontes.
+48. Banco de perguntas.
+49. Simulados.
+50. Resultados e estatísticas.
+51. Notícias.
+52. Pagamentos.
+53. Assinaturas.
+54. Afiliados.
+55. Comissões.
+56. Pagamentos de comissões.
+57. Configurações.
+58. Registos de operações críticas.
+59. Gestão de integrações.
+
+As páginas devem ser efectivamente ligadas às funcionalidades correspondentes.
+
+Não criar dezenas de páginas vazias apenas para cumprir esta lista.
+
+Priorizar fluxos completos, com operações reais e dados persistentes.
+
+==================================================
+26. REGRAS DE IMPLEMENTAÇÃO
+==================================================
+
+É obrigatório respeitar as seguintes regras durante o desenvolvimento.
+
+REGRA 1:
+Não te limites a produzir um plano ou uma lista de funcionalidades. Implementa o projecto.
+
+REGRA 2:
+Não entregues apenas uma landing page.
+
+REGRA 3:
+Não utilizes dados fictícios em produção.
+
+REGRA 4:
+Não substituas uma funcionalidade real por um botão que não faz nada.
+
+REGRA 5:
+Não simules pagamentos, autenticação, assinaturas ou resultados.
+
+REGRA 6:
+Não apresentes integrações externas como funcionais antes de as configurar e testar.
+
+REGRA 7:
+Não coloques segredos no frontend.
+
+REGRA 8:
+Não deixes políticas RLS desactivadas nas tabelas que precisam de protecção.
+
+REGRA 9:
+Não implementes o painel administrativo com autorização exclusivamente visual.
+
+REGRA 10:
+Não alteres o significado dos planos, preços ou regras de afiliados sem necessidade justificada.
+
+REGRA 11:
+Não inventes conteúdos oficiais, datas de concursos ou informações institucionais.
+
+REGRA 12:
+Não removas funcionalidades já concluídas ao acrescentar novas.
+
+REGRA 13:
+Não reescrevas todo o projecto desnecessariamente quando for suficiente corrigir um módulo.
+
+REGRA 14:
+Não introduzas dependências sem necessidade.
+
+REGRA 15:
+Não deixes erros conhecidos sem os documentar e corrigir.
+
+REGRA 16:
+Não escondas limitações importantes.
+
+REGRA 17:
+Não declares uma tarefa concluída sem executar as verificações adequadas ao ambiente.
+
+REGRA 18:
+Não publiques credenciais, dados pessoais ou comprovativos financeiros em repositórios públicos.
+
+REGRA 19:
+Não permitas que a IA altere directamente dados financeiros, permissões ou estados de pagamento sem as verificações exigidas pelo sistema.
+
+REGRA 20:
+Não sacrifiques a segurança para tornar uma demonstração visual mais rápida.
+
+Se uma funcionalidade depender de uma credencial, serviço ou configuração que ainda não existe, constrói a estrutura necessária, documenta o requisito e identifica-a claramente como pendente de configuração.
+
+==================================================
+27. PLANO DE DESENVOLVIMENTO
+==================================================
+
+Desenvolve o projecto em fases, mantendo uma arquitectura única.
+
+FASE 1 — FUNDAÇÃO E IDENTIDADE
+
+Implementar:
+- Estrutura do projecto.
+- Design system.
+- Identidade visual.
+- Navegação.
+- Página inicial.
+- Páginas públicas.
+- Responsividade.
+- Componentes reutilizáveis.
+- Configuração inicial do Supabase.
+
+FASE 2 — AUTENTICAÇÃO E SEGURANÇA
+
+Implementar:
+- Registo.
+- Login.
+- Recuperação de palavra-passe.
+- Perfis.
+- Papéis e permissões.
+- RLS.
+- Protecção das rotas.
+- Configuração segura do backend.
+
+FASE 3 — CENTRO DE ESTUDOS
+
+Implementar:
+- Concursos.
+- Áreas.
+- Matérias.
+- Temas.
+- Conteúdos.
+- Fontes.
+- Permissões de acesso.
+- Progresso.
+
+FASE 4 — BANCO DE PERGUNTAS E SIMULADOS
+
+Implementar:
+- Perguntas.
+- Opções.
+- Respostas correctas.
+- Explicações.
+- Simulados.
+- Cronómetro.
+- Submissão.
+- Correcção.
+- Resultados.
+- Histórico.
+- Revisão de erros.
+
+FASE 5 — PAINEL ADMINISTRATIVO
+
+Implementar:
+- Dashboard.
+- Gestão de utilizadores.
+- Gestão de conteúdos.
+- Banco de perguntas.
+- Simulados.
+- Notícias.
+- Configurações.
+- Operações administrativas protegidas.
+
+FASE 6 — PLANOS E PAGAMENTOS
+
+Implementar:
+- Plano gratuito.
+- Plano mensal.
+- Plano vitalício.
+- Registos de pagamentos.
+- Confirmação manual.
+- Activação de Premium.
+- Expiração.
+- Renovação.
+- Histórico.
+- Protecção contra duplicações.
+
+FASE 7 — PROGRAMA DE AFILIADOS
+
+Implementar:
+- Links.
+- Atribuição de referências.
+- Níveis.
+- Descontos.
+- Comissões.
+- Aprovação.
+- Registo de pagamentos.
+- Histórico.
+- Protecção contra fraude.
+
+FASE 8 — INTELIGÊNCIA ARTIFICIAL
+
+Implementar:
+- Treinador AproVE.
+- Explicações.
+- Geração de exercícios.
+- Revisão de erros.
+- Plano de estudo.
+- Controlo de utilização.
+- Gestão de custos.
+- Fontes.
+- Tratamento de erros.
+
+FASE 9 — NOTÍCIAS E AUTOMAÇÃO DE CONTEÚDOS
+
+Implementar:
+- Gestão editorial.
+- Fontes.
+- Datas.
+- Resumos.
+- Pipeline de criação assistida por IA.
+- Verificação.
+- Publicação.
+- Actualização.
+
+FASE 10 — QUALIDADE E LANÇAMENTO
+
+Executar:
+- Testes.
+- Correcção de erros.
+- Revisão de segurança.
+- Testes de permissões.
+- Testes dos fluxos financeiros.
+- Testes de responsividade.
+- Optimização.
+- Documentação.
+- Preparação do deployment.
+
+As fases são uma ordem de implementação, não uma autorização para deixar a segurança para o fim.
+
+A segurança essencial, a integridade dos dados e a arquitectura da base de dados devem ser consideradas desde a Fase 1.
+
+==================================================
+28. TESTES OBRIGATÓRIOS
+==================================================
+
+Cria testes adequados à arquitectura escolhida.
+
+AUTENTICAÇÃO:
+- Um utilizador consegue registar-se.
+- Um utilizador consegue entrar e sair.
+- A recuperação de palavra-passe funciona quando configurada.
+- Um utilizador não autenticado não acede às páginas privadas.
+
+PERMISSÕES:
+- Um utilizador não consegue consultar dados privados de outro.
+- Um utilizador não consegue tornar-se administrador.
+- Um utilizador não consegue atribuir Premium a si próprio.
+- Um utilizador não consegue alterar o resultado final de um simulado.
+- Um afiliado não consegue aprovar as próprias comissões.
+
+SIMULADOS:
+- As perguntas são apresentadas correctamente.
+- O cronómetro funciona.
+- As respostas são guardadas.
+- A submissão é registada uma única vez.
+- A classificação corresponde às respostas e às regras.
+- A revisão apresenta as explicações correctas.
+- O histórico é persistente.
+
+PLANO GRATUITO:
+- O limite diário é respeitado no backend.
+- O utilizador não consegue contornar facilmente o limite.
+- A correcção básica funciona.
+
+PAGAMENTOS:
+- Um pagamento pendente não activa Premium.
+- Um pagamento aprovado activa o plano correcto.
+- Um pagamento rejeitado não concede acesso.
+- Uma compra duplicada não gera acessos ou comissões duplicadas.
+- A expiração do mensal retira o acesso Premium.
+- O histórico é preservado.
+
+AFILIADOS:
+- O link de referência funciona.
+- A compra é atribuída de acordo com as regras.
+- O desconto é calculado correctamente.
+- A comissão utiliza a base financeira definida.
+- O nível é calculado correctamente.
+- A comissão não é duplicada.
+- O estado de comissão paga só é actualizado por um actor autorizado.
+
+IA:
+- A chave permanece no backend.
+- Os limites de utilização são respeitados.
+- Os erros do fornecedor são tratados.
+- A aplicação continua a funcionar se a IA estiver indisponível.
+- As respostas não inventam fontes deliberadamente.
+- O utilizador recebe uma mensagem adequada quando o serviço falha.
+
+RESPONSIVIDADE:
+- Telemóvel.
+- Tablet.
+- Computador.
+- Diferentes larguras de ecrã.
+- Orientação vertical e horizontal, quando relevante.
+
+SEGURANÇA:
+- Testar políticas RLS.
+- Testar acesso indevido.
+- Testar validações do backend.
+- Testar tentativas de manipular pedidos.
+- Testar operações financeiras repetidas.
+- Testar acesso a comprovativos.
+- Testar permissões administrativas.
+
+Não basta escrever os testes. Executa-os sempre que o ambiente permitir e corrige as falhas encontradas.
+
+==================================================
+29. PREPARAÇÃO PARA PRODUÇÃO
+==================================================
+
+Antes de considerar a plataforma pronta para lançamento, verifica:
+
+- Configuração de produção.
+- Variáveis de ambiente.
+- Chaves e segredos.
+- Políticas RLS.
+- Autorização administrativa.
+- Configuração de autenticação.
+- Endereços de redireccionamento.
+- Migrações da base de dados.
+- Domínio e HTTPS.
+- Tratamento de erros.
+- Registos técnicos.
+- Backups.
+- Políticas de privacidade.
+- Termos e condições.
+- Preços.
+- Informações de pagamento.
+- Regras de afiliados.
+- Expiração das assinaturas.
+- Limites da IA.
+- Funcionalidades realmente operacionais.
+- Testes finais.
+
+Preparar um ficheiro de exemplo de configuração de ambiente, sem credenciais reais.
+
+Criar instruções claras para:
+1. Criar o projecto Supabase.
+2. Configurar a base de dados.
+3. Aplicar as migrations.
+4. Configurar autenticação.
+5. Definir o primeiro administrador de forma segura.
+6. Configurar o fornecedor de IA.
+7. Configurar o armazenamento.
+8. Executar a aplicação localmente.
+9. Executar os testes.
+10. Publicar a aplicação.
+11. Actualizar a aplicação.
+12. Recuperar de falhas.
+
+Nunca criar uma palavra-passe administrativa padrão insegura.
+
+Nunca colocar credenciais reais nos ficheiros públicos.
+
+==================================================
+30. CRITÉRIOS DE ACEITAÇÃO
+==================================================
+
+A aplicação só poderá ser considerada funcional quando os principais fluxos estiverem implementados e testados.
+
+FLUXO DO CANDIDATO:
+
+Um visitante abre o website.
+
+Compreende a proposta de valor.
+
+Cria uma conta.
+
+Entra na plataforma.
+
+Acede ao dashboard.
+
+Escolhe uma matéria.
+
+Estuda o conteúdo.
+
+Realiza o simulado gratuito.
+
+Submete as respostas.
+
+Recebe a correcção.
+
+Consulta os resultados.
+
+Revisa os erros.
+
+O sistema guarda o histórico.
+
+O utilizador consegue voltar mais tarde e consultar os dados.
+
+FLUXO PREMIUM:
+
+O utilizador consulta os planos.
+
+Escolhe um plano.
+
+Recebe instruções de pagamento.
+
+O pagamento fica pendente.
+
+O administrador confirma a entrada do dinheiro.
+
+O sistema activa o plano correcto.
+
+O utilizador acede às funcionalidades Premium.
+
+Se o plano mensal expirar, o sistema retira o acesso Premium sem eliminar a conta.
+
+FLUXO DO AFILIADO:
+
+O utilizador acede ao programa.
+
+Obtém o link pessoal.
+
+Partilha o link.
+
+Um novo cliente utiliza a referência.
+
+O cliente realiza uma compra válida.
+
+O pagamento é confirmado.
+
+A compra é atribuída de acordo com as regras.
+
+O sistema calcula a comissão.
+
+O administrador verifica e aprova a comissão.
+
+O proprietário efectua o pagamento.
+
+O sistema regista o pagamento da comissão.
+
+FLUXO ADMINISTRATIVO:
+
+O administrador inicia sessão.
+
+Consulta os indicadores.
+
+Cria um conteúdo.
+
+Adiciona perguntas.
+
+Publica um simulado.
+
+Gere notícias.
+
+Verifica pagamentos.
+
+Gere assinaturas.
+
+Consulta afiliados.
+
+Aprova comissões.
+
+Altera configurações autorizadas.
+
+Todas estas operações são persistentes e protegidas.
+
+FLUXO DA IA:
+
+O utilizador abre o Treinador AproVE.
+
+Faz uma pergunta.
+
+O backend valida o pedido.
+
+Verifica as permissões e os limites.
+
+A IA responde.
+
+A resposta é apresentada de forma clara.
+
+Quando necessário, inclui referências verificáveis.
+
+Se o fornecedor falhar, o utilizador recebe uma mensagem apropriada e pode continuar a utilizar as restantes funcionalidades.
+
+==================================================
+31. MODO DE TRABALHO
+==================================================
+
+Quero que trabalhes com autonomia técnica, rigor e capacidade de decisão.
+
+Não me faças perguntas sobre pormenores visuais que possas decidir de forma fundamentada com base nesta especificação.
+
+Toma decisões coerentes sobre espaçamentos, dimensões, componentes, hierarquia visual, transições, organização de ficheiros e arquitectura interna.
+
+Se uma decisão importante não estiver definida, escolhe a alternativa mais segura, simples, económica e escalável para a primeira versão.
+
+Não introduzas funcionalidades complexas apenas para tornar o projecto aparentemente mais avançado.
+
+Dá prioridade a um produto utilizável, consistente e bem construído.
+
+Quando houver duas soluções possíveis, privilegia a que:
+- Reduza riscos de segurança.
+- Simplifique a manutenção.
+- Evite custos desnecessários.
+- Permita crescer.
+- Funcione bem em telemóveis.
+- Preserve os dados.
+- Reduza a dependência de serviços externos.
+- Facilite a migração futura.
+
+Não me entregues apenas explicações do que pretendes fazer.
+
+Executa o trabalho dentro das capacidades reais do ambiente de desenvolvimento.
+
+Quando terminares uma fase:
+1. Resume o que foi efectivamente implementado.
+2. Indica os ficheiros principais criados ou alterados.
+3. Executa os testes possíveis.
+4. Corrige os erros encontrados.
+5. Identifica integrações que ainda exigem credenciais ou configuração externa.
+6. Apresenta os próximos passos concretos.
+7. Preserva tudo o que já funciona.
+
+Se o ambiente não permitir concluir o projecto inteiro numa única execução, não tentes fingir que todas as funcionalidades estão prontas.
+
+Conclui a fase actual, mantém o código consistente e continua a partir do estado existente nas interacções seguintes.
+
+Não reconstruas a aplicação do zero sem necessidade.
+
+Não substituas funcionalidades implementadas por versões simplificadas sem explicar a razão.
+
+==================================================
+32. PRIMEIRA TAREFA
+==================================================
+
+COMEÇA AGORA.
+
+Antes de escrever grandes quantidades de código, faz uma análise técnica curta da arquitectura necessária e transforma esta especificação num plano de implementação executável.
+
+Depois começa imediatamente a construir a primeira versão funcional.
+
+A primeira entrega deve incluir:
+
+1. Estrutura organizada do projecto.
+2. Identidade visual AproVE.
+3. Design system reutilizável.
+4. Website público completo.
+5. Navegação funcional.
+6. Página inicial profissional.
+7. Página de planos.
+8. Página de notícias.
+9. Páginas de registo e login.
+10. Estrutura inicial da área privada.
+11. Configuração preparada para Supabase.
+12. Estrutura de rotas protegidas.
+13. Preparação para PWA.
+14. Base técnica para as restantes funcionalidades.
+15. Instruções claras sobre configurações externas necessárias.
+
+A página inicial deve ter qualidade visual suficiente para apresentar a AproVE como um produto digital profissional.
+
+Não quero uma página genérica de template.
+
+Cria uma interface original, com uma hierarquia visual clara, um bom uso das cores, tipografia cuidada, cartões consistentes e uma experiência excelente em telemóveis.
+
+A página deve ser visualmente atractiva sem excesso de informação.
+
+Os botões devem funcionar de acordo com o estado real da aplicação.
+
+Não colocar ligações que conduzam a páginas inexistentes sem tratamento adequado.
+
+Depois da primeira entrega, continua a desenvolver a autenticação, o centro de estudos, os simulados, a administração, os pagamentos, os afiliados e a inteligência artificial, seguindo a arquitectura definida.
+
+O objectivo final é entregar uma única plataforma AproVE, integrada, segura, funcional e preparada para crescer.
+
+PRINCÍPIO FINAL:
+
+AproVE não deve ser apenas bonita.
+
+Deve ser útil, fiável, segura, fácil de utilizar, credível, sustentável e capaz de ajudar verdadeiramente os candidatos a preparar-se melhor.
+
+A identidade visual atrai.
+
+A experiência convence.
+
+A qualidade dos conteúdos cria confiança.
+
+A utilidade incentiva o regresso.
+
+A segurança protege os utilizadores.
+
+E a integração entre todas as funcionalidades transforma a AproVE num produto digital real.

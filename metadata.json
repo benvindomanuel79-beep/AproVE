@@ -1,0 +1,6 @@
+{
+  "name": "AproVE - Preparação para Concursos Públicos Angola (MININT)",
+  "description": "Especificação técnica, arquitetura de software e plataforma integrada de preparação para concursos públicos em Angola com simuladores, cronograma inteligente do MININT e sistema de afiliados.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

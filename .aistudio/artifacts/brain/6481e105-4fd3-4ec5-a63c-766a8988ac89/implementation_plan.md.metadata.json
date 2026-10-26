@@ -1,0 +1,6 @@
+{
+  "summary":  "Plano mestre executável de arquitetura e engenharia para a plataforma AproVE (Angola) cobrindo os 32 capítulos da especificação técnica oficial: design system (#10233F / #16A673 / #E6B75A), website público de conversão, portal do candidato, centro de estudos, simulados cronometrados de 45 min, testes psicotécnicos, treinador IA (Gemini 3.8 Flash), programa de afiliados de 3 níveis, consola administrativa com aprovação manual de pagamentos por Multicaixa Express / IBAN, esquema relacional Supabase com 29 tabelas e conformidade PWA.",
+  "updatedAt":  "2026-10-26T18:03:44.679986769Z",
+  "requestFeedback":  true,
+  "userFacing":  true
+}

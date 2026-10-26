@@ -1,0 +1,5 @@
+{
+  "summary":  "Documento de Requisitos de Produto (PRD) estruturado especificamente para a criação e execução de testes automatizados E2E, auditoria de segurança (STRIDE), testes de penetração, integridade de Row Level Security (RLS) no Supabase, prevenção de fraudes em pagamentos/afiliados e resiliência offline do PWA.",
+  "updatedAt":  "2026-10-26T16:47:00.526120639Z",
+  "userFacing":  true
+}

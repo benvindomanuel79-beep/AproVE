@@ -1,0 +1,46 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Default deny all unknown paths
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // Helper functions
+    function isValidId(id) {
+      return id is string && id.size() > 0 && id.size() <= 128;
+    }
+
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    // Test connection path for initial connection health check
+    match /test/{docId} {
+      allow read: if true;
+    }
+
+    // Collection of Candidate Users (readable for ranking and candidate profile management)
+    match /candidates/{candidateId} {
+      allow read: if true;
+      allow create, update: if isValidId(candidateId);
+      allow delete: if false;
+    }
+
+    // Collection of Exam Attempts (readable for public provincial ranking & simulator)
+    match /exam_attempts/{attemptId} {
+      allow read: if true;
+      allow create: if isValidId(attemptId);
+      allow update: if false;
+      allow delete: if false;
+    }
+
+    // Collection of Subscriptions
+    match /subscriptions/{subId} {
+      allow read: if true;
+      allow create, update: if isValidId(subId);
+      allow delete: if false;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "id": "/",
+  "name": "AproVE - Preparação para Concursos Públicos Angola",
+  "short_name": "AproVE",
+  "description": "Mais preparação. Mais confiança. Plataforma independente de preparação para concursos públicos em Angola com simuladores e acompanhamento de progresso.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#10233F",
+  "theme_color": "#10233F",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
